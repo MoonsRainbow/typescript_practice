@@ -1,21 +1,29 @@
 {
-  "name": "typescript",
-  "version": "1.0.0",
-  "description": "노마드코더 typescript 블록 체인 만들기",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MoonsRainbow/typescript_practice.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/MoonsRainbow/typescript_practice/issues"
-  },
-  "homepage": "https://github.com/MoonsRainbow/typescript_practice#readme"
+	"name": "typescript",
+	"version": "1.0.0",
+	"description": "노마드코더 typescript 블록 체인 만들기",
+	"scripts": {
+		"build": "tsc",
+		"dev": "nodemon --exec ts-node src/index.ts",
+		"start": "node build/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MoonsRainbow/typescript_practice.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MoonsRainbow/typescript_practice/issues"
+	},
+	"homepage": "https://github.com/MoonsRainbow/typescript_practice#readme",
+	"devDependencies": {
+		"@types/node": "^24.3.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.2"
+	},
+	"dependencies": {
+		"nodemon": "^3.1.10"
+	}
 }
